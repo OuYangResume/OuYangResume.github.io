@@ -62,5 +62,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-        
-  echo "您的网站已部署到: ${{ steps.deployment.outputs.page_url }}"

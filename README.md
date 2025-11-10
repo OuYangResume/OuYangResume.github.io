@@ -8,17 +8,20 @@ ___
 ### 博客使用的主题：[Next](http://theme-next.iissnan.com/)
 
 
+
 ### 启动项目
-npm install hexo-cli -g
-npm install
+npm install -g hexo-cli
+
+hexo clean && hexo server
 
 ### 生成
 hexo generate
 hexo server -p 4000
 
 
-### 部署项目 
-hexo clean && 
+### 部署项目
+
+直接推送代码到master分支，会自动执行workflows下面的hexo.yml构建.
 
 ### 创建写作
 

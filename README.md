@@ -5,18 +5,24 @@ ___
 
 ### 访问地址 ：[https://ouyangresume.github.io](https://ouyangresume.github.io/)
 
-### 博客使用的主题：[Next](http://theme-next.iissnan.com/)
+### 博客使用的主题：[Next](https://github.com/next-theme/hexo-theme-next)
 
 
 
 ### 启动项目
+node环境版本
+nvm install 22.13.1
+nvm use 22.13.1
+
+下载依赖
 npm install -g hexo-cli
+npm install
 
 hexo clean && hexo server
 
-### 生成
+### 生成本地静态文件
 hexo generate
-hexo server -p 4000
+
 
 
 ### 部署项目

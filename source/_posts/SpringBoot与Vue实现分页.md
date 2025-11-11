@@ -8,7 +8,7 @@ tags: [SpringBoot,Vue]
 ### 主要技术路线
 elementUI+axios+springboot
 提供分页测试数据[接口地址](https://github.com/OuYangResume/springbootdemo)。页面[组件地址](https://github.com/OuYangResume/Vue-Gis/blob/master/src/views/element/table/paginationtable.vue)
-<div  align="center"><img src="SpringBoot与Vue实现分页/page.png" width = "500" height = "400" alt="page" align=center />
+<div  align="center"><img  src="{% asset_path page.png %}" width = "500" height = "400" alt="page" align=center />
 </div>
 
 <!-- more -->
@@ -138,7 +138,7 @@ export default {
 };
 </script>
 ```
-<div  align="center"><img src="SpringBoot与Vue实现分页/table.png" width = "500" height = "400" alt="table" align=center />
+<div  align="center"><img src="./table.png" width = "500" height = "400" alt="table" align=center />
 </div>
 
 ### axios获取数据
@@ -240,6 +240,6 @@ public class UserServiceImpl implements UserService{
     }
 }
 ```
-<div  align="center"><img src="SpringBoot与Vue实现分页/post.png" width = "500" height = "400" alt="table" align=center />
+<div  align="center"><img src="./post.png" width = "500" height = "400" alt="table" align=center />
 </div>
 结合以上三个技术就可以实现分页功能了。

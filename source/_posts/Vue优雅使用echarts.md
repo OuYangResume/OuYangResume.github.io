@@ -106,7 +106,7 @@ export default {
 };
 </script>
 ```
-<div  align="center"><img src="Vue优雅使用echarts/bar.png" width = "500" height = "400" alt="Bar图" align=center />
+<div  align="center"><img src="./bar.png" width = "500" height = "400" alt="Bar图" align=center />
 </div>
 ### [源码地址](https://github.com/OuYangResume/Vue-Gis)
 

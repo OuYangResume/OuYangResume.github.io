@@ -64,7 +64,7 @@ tags: [Vue]
 
 #### 1.登录umami 管理系统。
 添加需要埋点的网站
-<div  align="center"><img src="umami埋点平台/image.png" width = "300" height = "200" alt="图片名称" align=center />
+<div  align="center"><img src="./image.png" width = "300" height = "200" alt="图片名称" align=center />
 </div>
 
 #### 2.收集数据
@@ -119,3 +119,54 @@ pnpm run builddd
 // 启动应用程序
 pnpm run dev
 ```
+
+#### docker部署--遇到问题解决问题。
+
+```  javascript
+//官网下载doker.desktop
+//启用 WSL 2 功能 ,以管理员身份打开 PowerShell : 
+wsl --install
+
+// 设置docker.desktop 的Docker Engine配置文件
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+  "experimental": false,
+  "insecure-registries": [
+    "172.23.32.15:443",
+    "172.23.32.15:80"
+  ],
+  "registry-mirrors": [
+    "https://docker.1ms.run",
+    "https://docker.m.daocloud.io",
+    "https://docker.nju.edu.cn",
+    "https://dockerproxy.cn"
+  ]
+}
+
+// 在项目的根目录 构建docker镜像。 
+//使用arm64平台构建镜像名umami-arm64-app 标签为latest
+docker build --platform linux/arm64 -t umami-arm64-app:latest .
+
+在doker.desktop 运行打出来的镜像umami-arm64-app:latest 测试是否正常。
+
+//需要将本地镜像重新打标签，以符合私有仓库的命名规范：
+docker tag umami-arm64-app:latest 172.23.32.15:80/public/umami:V1.0.1
+
+// 登录到私有镜像仓库
+docker login 172.23.32.15 -u 'robot$robot_devops' -p 'sJ2pwXgff9XNvEL5MXtcWDhMDrUpfven'
+// 推送到私有镜像仓库
+docker push 172.23.32.15:80/public/umami:V1.0.1
+  
+//登录到portainer 设置变量 启动项目
+```
+
+<div  align="center"><img src="./docker.png" width = "800" height = "400" alt="图片名称" align=center />
+</div>
+
+<div  align="center"><img src="./portainer.png" width = "800" height = "400" alt="图片名称" align=center />
+</div>

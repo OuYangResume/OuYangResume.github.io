@@ -28,7 +28,7 @@ Nginx指定默认加载/etc/nginx/nginx.conf的配置文件。如果要查看加
 
 然后通过这种方式安装的，会自动创建服务，会自动在/etc/init.d/nginx新建服务脚本，然后就可以使用sudo service nginx {start|stop|restart|reload|force-reload|status|configtest|rotate|upgrade}的命令启动。
 下面是被我修改过的页面。
-<div  align="center"><img src="vue项目部署到nginx服务器/nginx.png" width = "500" height = "400" alt="nginx" align=center />
+<div  align="center"><img src="./nginx.png" width = "500" height = "400" alt="nginx" align=center />
 </div>
 ### vue-cli打包成静态文件
 打包之前需要注意两个问题：
@@ -239,7 +239,7 @@ pm2 delete all                       #删除PM2列表中所有的进程
 ```
 在ubuntu上把仓库中文件clone下来。
 安装依赖:`npm install`。启动：`npm start`
-<div  align="center"><img src="vue项目部署到nginx服务器/nuxt.png" width = "500" height = "400" alt="nginx" align=center />
+<div  align="center"><img src="./nuxt.png" width = "500" height = "400" alt="nginx" align=center />
 </div>
 pm2启动:`pm2 start npm --name "my-nuxt" -- run start`
 #### ningx将pm2中运行的项目转发出去。

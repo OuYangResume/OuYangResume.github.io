@@ -181,10 +181,10 @@ tags: [GIS]
 </html>
 ```
 #### 效果图
-<div  align="center"><img src="arcgis-api实现一些常用的功能/line.png" width = "500" height = "400" alt="测量距离" align=center />
+<div  align="center"><img src="./line.png" width = "500" height = "400" alt="测量距离" align=center />
 </div>
 
-<div  align="center"><img src="arcgis-api实现一些常用的功能/area.png" width = "500" height = "400" alt="测量面积" align=center />
+<div  align="center"><img src="./area.png" width = "500" height = "400" alt="测量面积" align=center />
 </div>
 
 ### 动态轨迹

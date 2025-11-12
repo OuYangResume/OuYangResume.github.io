@@ -11,13 +11,13 @@ tags: [Vue,GIS]
 先附上我的仓库[源码地址](https://github.com/OuYangResume/Vue-Gis)和效果图吧
 <!-- more -->
 ### 自定义Marker图标
-<div  align="center"><img src="vue结合leaflet实现地图的常用功能/marker.png" width = "500" height = "400" alt="自定义Marker图标" align=center />
+<div  align="center"><img src="./marker.png" width = "500" height = "400" alt="自定义Marker图标" align=center />
 </div>
 
 ### 聚类效果
-<div  align="center"><img src="vue结合leaflet实现地图的常用功能/julei.png" width = "500" height = "400" alt="聚类效果" align=center />
+<div  align="center"><img src="./julei.png" width = "500" height = "400" alt="聚类效果" align=center />
 </div>
 
 ### 热力图 
-<div  align="center"><img src="vue结合leaflet实现地图的常用功能/heatMap.png" width = "500" height = "400" alt="热力图" align=center />
+<div  align="center"><img src="./heatMap.png" width = "500" height = "400" alt="热力图" align=center />
 </div>

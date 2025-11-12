@@ -1,5 +1,5 @@
 ---
-title: git
+title: ubuntu搭建git服务器
 date: 2018-07-24 20:55:13
 categories: Git
 tags: [Git,Ubuntu]
@@ -28,14 +28,14 @@ password：qwer
 3.重新启动gitbucket`nohup java -jar gitbucket.war --port 8088`
 这里设置的端口号似乎没有用。还是会启动为8080端口。
 4.用游客账号创建一个公开的oouyang仓库。创建一个gh-pages孤儿分支，并设置为默认分支。
-<div  align="center"><img src="ubuntu搭建git服务器/oouyang.png" width = "500" height = "300" alt="gitbucket" align=center />
+<div  align="center"><img src="./oouyang.png" width = "500" height = "300" alt="gitbucket" align=center />
 </div>
 从图片可以看到多了一个pages的功能。（也可以选择master分支为page功能。就不需要创建孤儿分支了。）
 5.colne 这个分支并上传一些页面。
 访问：打开浏览器并指向 <your repo url>/pages
 ### git常用命令
 
-<div  align="center"><img src="ubuntu搭建git服务器/gitwork.png" width = "500" height = "300" alt="gitbucket" align=center />
+<div  align="center"><img src="./gitwork.png" width = "500" height = "300" alt="gitbucket" align=center />
 
 图中几个名词：
 + Workspace：工作区

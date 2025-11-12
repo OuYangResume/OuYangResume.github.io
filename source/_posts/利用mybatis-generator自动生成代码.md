@@ -33,7 +33,7 @@ tags: [技术]
 
 ## 编写generatorConfig.xml文件
  可以看到pom.xml文件中配置了generatorConfig.xml的所在位置
-<div  align="center"><img src="利用mybatis-generator自动生成代码/project.png" width = "300" height = "400" alt="图片名称" align=center />
+<div  align="center"><img src="./project.png" width = "300" height = "400" alt="图片名称" align=center />
 </div>
 
 ``` java
@@ -82,6 +82,6 @@ tags: [技术]
 ## 执行generatorConfig.xml生成代码
 
 <div  align="center">
-<img src="利用mybatis-generator自动生成代码/jg.png" width = "200" height = "350" alt="图片名称"  />
+<img src="./jg.png" width = "200" height = "350" alt="图片名称"  />
 </div>
 图中标红的代码即是生成的代码。自动生成的代码也只有简单的增删改查。业务逻辑代码还需要自己敲咯。

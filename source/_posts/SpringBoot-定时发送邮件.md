@@ -183,6 +183,6 @@ public class SchedulUtil {
 }
 ```
 ### 收到你的早安，晚安和gun。
-<div  align="center"><img src="SpringBoot-定时发送邮件/mail.png" width = "500" height = "400" alt="email" align=center />
+<div  align="center"><img src="./mail.png" width = "500" height = "400" alt="email" align=center />
 </div>
 

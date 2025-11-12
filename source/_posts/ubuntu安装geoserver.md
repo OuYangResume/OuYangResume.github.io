@@ -11,7 +11,7 @@ tags: [GIS,SpringBoot]
 #### 上传到ubuntu
 用Xshell登录到服务器，然后使用sftp将下载的文件上传到root目录下。
 <!-- more -->
-<div  align="center"><img src="ubuntu安装geoserver/sftp.png" width = "500" height = "400" alt="sftp" align=center />
+<div  align="center"><img src="./sftp.png" width = "500" height = "400" alt="sftp" align=center />
 </div>
 将你要上传的文件拉到这里面来就行了。
 #### 解压geoserver
@@ -19,7 +19,7 @@ tags: [GIS,SpringBoot]
 `apt-get install unzip`
 解压zip文件
 `unzip 压缩文件名.zip`
-<div  align="center"><img src="ubuntu安装geoserver/unzip.png" width = "500" height = "400" alt="unzip" align=center />
+<div  align="center"><img src="./unzip.png" width = "500" height = "400" alt="unzip" align=center />
 </div>
 这里可以看到上传过来的zip和解压之后的geoserver-2.11.1
 #### 安装java环境
@@ -29,8 +29,9 @@ tags: [GIS,SpringBoot]
 4.查看java版本，看看是否安装成功`java-version`
 #### 设置GEOSERVER_HOME环境变量
 `vi /etc/profile` 添加路径   
-<div  align="center"><img src="ubuntu安装geoserver/home.png" width = "500" height = "400" alt="sftp" align=center />
+<div  align="center"><img src="./home.png" width = "500" height = "400" alt="sftp" align=center />
 </div>
+
 保存修改重新生效`source /etc/profile`
 #### 启动geoserver
 启动：` nohup ./startup.sh &`

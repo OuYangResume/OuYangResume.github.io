@@ -1,8 +1,8 @@
 ---
 title: umami埋点平台
 date: 2025-11-04 19:08:56
-categories: VUE
-tags: [Vue]
+categories: Javascript
+tags: [Javascript]
 ---
 
  [Umami](https://umami.is/docs) 是一种开源、注重隐私的网络分析工具，可作为 Google Analytics 的替代品。它提供了有关网站流量、用户行为和性能的重要见解，同时优先考虑数据隐私。
